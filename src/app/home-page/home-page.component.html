@@ -1,0 +1,5 @@
+<main class="container">
+  <input type="text" class="search" placeholder="🔍 search pokemon" autofocus [(ngModel)]="searchedValue">
+  <app-pokemon-list [matchingValue]="searchedValue"></app-pokemon-list>
+</main>
+

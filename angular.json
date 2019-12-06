@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pokedex2": {
+    "pokedex": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pokedex2",
+            "outputPath": "dist/pokedex",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -43,32 +43,25 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
+              "buildOptimizer": true
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "pokedex2:build"
+            "browserTarget": "pokedex:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "pokedex2:build:production"
+              "browserTarget": "pokedex:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pokedex2:build"
+            "browserTarget": "pokedex:build"
           }
         },
         "test": {
@@ -102,20 +95,19 @@
         }
       }
     },
-    "pokedex2-e2e": {
+    "pokedex-e2e": {
       "root": "e2e/",
       "projectType": "application",
-      "prefix": "",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "pokedex2:serve"
+            "devServerTarget": "pokedex:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "pokedex2:serve:production"
+              "devServerTarget": "pokedex:serve:production"
             }
           }
         },
@@ -131,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "pokedex2"
+  "defaultProject": "pokedex"
 }

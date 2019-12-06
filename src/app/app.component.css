@@ -1,0 +1,11 @@
+.pokesearch {
+  width: 30%;
+  display: inline-block;
+}
+.loader {
+  margin-top: 50px;
+  width: 59%;
+  display: inline-block;
+  position: fixed;
+}
+

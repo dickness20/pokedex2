@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  --pokemon-main-color: #CC0000;
+}
+

@@ -1,0 +1,31 @@
+.pokemon-list {
+  margin-top: 20px;
+  display: block;
+  gap: 8px 8px;
+  padding: 0;
+  width: 90%;
+}
+
+.pokemon-list li {
+  display: block;
+  text-decoration: none;
+
+}
+
+@media screen and (min-width: 320px) {
+  .pokemon-list {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .pokemon-list {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pokemon-list {
+    width: 90%;
+  }
+}
